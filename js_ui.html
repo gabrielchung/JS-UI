@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>js_ui</title>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js_ui.js"></script>
+        <script>
+            //Start-up
+            $(document).ready(function() {
+
+                //Translate the tags
+
+                // Code...
+                js_ui.translateUITags($('#earth'), $('#moon'));
+
+                //
+                $('#earth').css('display','none');
+                $('#moon').css('display','block');
+
+            });
+        </script>
+    </head>
+    <body>
+        <h1>BetterWorld - js_ui</h1>
+        <div id="earth">
+            <checkboxes>
+                <value>Test</value>
+                <value>123</value>
+            </checkboxes>
+            <radio>
+                <name>gender</name>
+                <value>Male</value>
+                <value>Female</value>
+            </radio>
+            <dropdown>
+                <option>Volvo</option>
+                <option>Saab</option>
+                <option>Fiat</option>
+                <option>Audi</option>
+            </dropdown>
+            <button>Test</button>
+            <textbox></textbox>
+        </div>
+        <div id="moon">
+        </div>
+    </body>
+</html>
